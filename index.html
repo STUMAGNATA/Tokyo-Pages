@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nihon Books</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#222;
+    }
+
+    header{
+      background:#c40000;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    nav{
+      background:#111;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    .banner{
+      background:url('https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1400&auto=format&fit=crop') center/cover;
+      height:400px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      text-align:center;
+    }
+
+    .banner div{
+      background:rgba(0,0,0,0.6);
+      padding:30px;
+      border-radius:10px;
+    }
+
+    .banner h1{
+      font-size:50px;
+    }
+
+    .container{
+      padding:50px 10%;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:40px;
+      color:#c40000;
+      font-size:35px;
+    }
+
+    .books{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .price{
+      color:#c40000;
+      font-size:22px;
+      font-weight:bold;
+      margin:15px 0;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#c40000;
+      color:white;
+      padding:12px 20px;
+      text-decoration:none;
+      border-radius:5px;
+    }
+
+    footer{
+      margin-top:50px;
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Nihon Books</h1>
+    <p>Livros importados do Japão</p>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Mangás</a>
+    <a href="#">Livros</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <section class="banner">
+    <div>
+      <h1>Explore a Literatura Japonesa</h1>
+      <p>Mangás, novels e cultura japonesa.</p>
+    </div>
+  </section>
+
+  <section class="container">
+
+    <h2 class="title">Livros em Destaque</h2>
+
+    <div class="books">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1000&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Tokyo Dreams</h3>
+          <p>Uma viagem pela cultura japonesa.</p>
+          <div class="price">R$ 89,90</div>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=1000&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Mangá Collection</h3>
+          <p>Edição especial importada.</p>
+          <div class="price">R$ 59,90</div>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1000&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Samurai Legends</h3>
+          <p>Histórias clássicas japonesas.</p>
+          <div class="price">R$ 99,90</div>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Nihon Books</p>
+  </footer>
+
+</body>
+</html>
